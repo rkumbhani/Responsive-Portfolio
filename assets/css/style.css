@@ -1,0 +1,258 @@
+body {
+    font-family: Avenir, sans-serif;
+    background-image: url(../images/background.jpg);
+    background-repeat: repeat;
+}
+
+h1 {
+    color: white;
+    font-size: 22pt;
+    text-align: center;
+    padding-top: 30px;
+}
+
+h2 {
+    color: lightseagreen;
+    font-size: 20pt;
+}
+
+h3 {
+    color: lightseagreen;
+    font-size: 18pt;
+}
+
+p {
+    font-size: 14pt;
+    line-height: 18pt;
+    color: darkgray;
+}
+
+p.float {
+    position: relative;
+    z-index: 2;
+    color: darkgray;
+}
+
+hr {
+    background-color: lightgray;
+    width: 80%;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.main {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    height: 80px;
+    border-bottom: 3px solid lightgrey;
+}
+
+.heading { 
+    position: absolute;
+    bottom: 0;
+    margin-left: 10%;
+    background-color: lightseagreen;
+    height: 80px;
+    width: 230px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: dimgray;
+    text-align: center;
+    padding-top: 30px;
+    padding-right: 50px;
+    text-decoration: none;
+}
+
+.active {
+    color: lightseagreen;
+    font-weight: bold;
+}
+
+.fixedbottom {
+	bottom: 0;
+    left: 0;
+	position: fixed;
+	background-color: dimgrey;
+	height: 60px;
+	width: 100%;
+    margin-top: 0;
+    border-top: 7px solid lightseagreen;
+}
+
+.relative {
+	align-self: center;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	background-color: white;
+	height: 200px;
+	width: 200px;
+}
+
+.absolute {
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	background-color: #666;
+	height: 50px;
+	width: 100px;
+}
+
+.copyright {
+    font-size: 10pt;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.pic {
+    float: left;
+    height: 150px;
+    width: auto;
+    z-index: 1;
+    padding-right: 10px;
+}
+
+.about {
+    float: left;
+    padding: 25px;
+    margin-top: 10%;
+    width: 500px;
+    background-color: white;
+    margin-left: 10%;
+}
+
+.connect {
+    float: left;
+    padding: 25px;
+    margin-top: 10%;
+    width: 300px;
+    background-color: white;
+    margin-left: 100px;
+}
+
+.icon {
+    height: 60px;
+    width: 60px;
+    padding: 10px; 
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+}
+
+.text {
+    width: 400px;   
+}
+
+.button {
+    background-color: lightseagreen;
+    float: right;
+    border: none;
+    margin-top: 20px;
+}
+
+.portfolio-1 {
+    position: relative;
+    float: left;
+    height: 150px;
+    z-index: 1;
+    padding: 10px;
+}
+
+.portfolio-2 {
+    position: relative;
+    float: left;
+    height: 150px;
+    z-index: 2;
+    padding: 10px;
+}
+
+
+/* LARGE screen */
+
+@media screen and (max-width: 980px) {
+    .container {
+        width: 450px;
+    }
+}
+
+/* MEDIUM screen */
+
+@media screen and (max-width: 768px) {
+    .container {
+        margin-top: 100px;
+        width: 700px;
+    }
+    
+    .pic {
+        width: 350px;
+        height: auto;
+        padding-bottom: 15px;
+    }
+    
+    .connect {
+        width: 500px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+/* SMALL screen */
+
+@media screen and (max-width: 640px) {
+    .container {
+        margin-top: 15%;
+        width: 600px;
+    }
+    
+    .pic {
+        float: none;
+        width: 400px;
+        height: auto;
+        padding-bottom: 15px;
+    }
+    
+    .heading {
+        width: 640px;
+        margin-left: 0;
+    }
+    
+    .nav {
+        width: 620px;
+        height: 50px;
+        padding-bottom: 15px;
+        border-bottom: 2px solid lightgrey;
+        margin-top: 75px;
+        background-color:  white;
+    }
+    
+    li {
+        float: left;
+        margin-left: 15%;
+    }
+    
+    .connect {
+        width: 500px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    
+}
